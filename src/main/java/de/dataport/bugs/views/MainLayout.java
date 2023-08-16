@@ -11,7 +11,9 @@ import com.vaadin.flow.component.sidenav.SideNav;
 import com.vaadin.flow.component.sidenav.SideNavItem;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.theme.lumo.LumoUtility;
+import de.dataport.bugs.views.overview.OverviewView;
 import de.dataport.bugs.views.report0.Report0View;
+import de.dataport.bugs.views.report1.Report1View;
 import org.vaadin.lineawesome.LineAwesomeIcon;
 
 /**
@@ -50,7 +52,9 @@ public class MainLayout extends AppLayout {
     private SideNav createNavigation() {
         SideNav nav = new SideNav();
 
+        nav.addItem(new SideNavItem("Overview", OverviewView.class, LineAwesomeIcon.TOOLBOX_SOLID.create()));
         nav.addItem(new SideNavItem("Report 0", Report0View.class, LineAwesomeIcon.FILE.create()));
+        nav.addItem(new SideNavItem("Report 1", Report1View.class, LineAwesomeIcon.FILE.create()));
 
         return nav;
     }

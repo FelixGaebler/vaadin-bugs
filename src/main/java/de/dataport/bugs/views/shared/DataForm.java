@@ -6,18 +6,22 @@ import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.binder.Binder;
 
-public class DataForm {
+public class DataForm extends FormLayout {
 
-	public static CrudEditor<Data> editor() {
+	private final Binder<Data> binder;
+
+	public DataForm() {
+		this.binder = new Binder<>(Data.class);
+
 		TextField value = new TextField("Value");
-		FormLayout form = new FormLayout(value);
-
-		Binder<Data> binder = new Binder<>(Data.class);
-		binder.forField(value)
+		this.binder.forField(value)
 				.asRequired("Please enter a value")
-				.bind(Data::getValue, Data::setValue);
+				.bind(Data::getText, Data::setText);
+		add(value, 12);
+	}
 
-		return new BinderCrudEditor<>(binder, form);
+	public CrudEditor<Data> editor() {
+		return new BinderCrudEditor<>(this.binder, this);
 	}
 
 }

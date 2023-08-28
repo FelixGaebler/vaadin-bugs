@@ -1,15 +1,22 @@
 package de.dataport.bugs.views.shared;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Entity
+@Table(name = "data")
 public class Data {
 
-	private String value;
+	@Id
+	@GeneratedValue
+	private Long id;
 
-	public String getValue() {
-		return value;
-	}
-
-	public void setValue(String value) {
-		this.value = value;
-	}
+	@Setter
+	private String text;
 
 }

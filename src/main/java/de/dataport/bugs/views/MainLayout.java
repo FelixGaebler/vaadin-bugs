@@ -17,6 +17,7 @@ import de.dataport.bugs.views.report1.Report1View;
 import de.dataport.bugs.views.report2.Report2View;
 import de.dataport.bugs.views.report3.Report3View;
 import de.dataport.bugs.views.report4.Report4View;
+import de.dataport.bugs.views.report5.Report5View;
 import org.vaadin.lineawesome.LineAwesomeIcon;
 
 /**
@@ -61,6 +62,7 @@ public class MainLayout extends AppLayout {
 		nav.addItem(new SideNavItem("Report 2", Report2View.class, LineAwesomeIcon.FILE.create()));
 		nav.addItem(new SideNavItem("Report 3", Report3View.class, LineAwesomeIcon.FILE.create()));
 		nav.addItem(new SideNavItem("Report 4", Report4View.class, LineAwesomeIcon.FILE.create()));
+		nav.addItem(new SideNavItem("Report 5", Report5View.class, LineAwesomeIcon.FILE.create()));
 
 		return nav;
 	}

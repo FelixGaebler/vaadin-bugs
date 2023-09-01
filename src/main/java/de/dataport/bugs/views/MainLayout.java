@@ -11,6 +11,7 @@ import com.vaadin.flow.component.sidenav.SideNav;
 import com.vaadin.flow.component.sidenav.SideNavItem;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.theme.lumo.LumoUtility;
+import de.dataport.bugs.views.workaround0.Workaround0View;
 import de.dataport.bugs.views.overview.OverviewView;
 import de.dataport.bugs.views.report0.Report0View;
 import de.dataport.bugs.views.report1.Report1View;
@@ -63,6 +64,7 @@ public class MainLayout extends AppLayout {
 		nav.addItem(new SideNavItem("Report 3", Report3View.class, LineAwesomeIcon.FILE.create()));
 		nav.addItem(new SideNavItem("Report 4", Report4View.class, LineAwesomeIcon.FILE.create()));
 		nav.addItem(new SideNavItem("Report 5", Report5View.class, LineAwesomeIcon.FILE.create()));
+		nav.addItem(new SideNavItem("Workaround 0", Workaround0View.class, LineAwesomeIcon.FILE.create()));
 
 		return nav;
 	}

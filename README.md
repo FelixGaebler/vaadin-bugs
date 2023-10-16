@@ -14,8 +14,8 @@ Maven project. Read more on [how to import Vaadin projects to different IDEs](ht
 
 ## Issues
 
-1. Report: https://github.com/vaadin/flow-components/issues/5364
+1. Report: https://github.com/vaadin/flow-components/issues/5364 (fixed in Vaadin 24.2)
 2. Report: https://github.com/vaadin/flow-components/issues/5400
 3. Report: https://github.com/vaadin/flow-components/issues/5399 
 4. Report: https://github.com/vaadin/flow-components/issues/5411 (fixed in Vaadin 24.2)
-6. Report: https://github.com/vaadin/flow/issues/17528 (fixed in Vaadin 24.1.14)
+6. Report: https://github.com/vaadin/flow/issues/17528 (fixed in Vaadin 24.1.11)
